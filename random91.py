@@ -16,18 +16,15 @@ dice3 = 0
 dice4 = 0
 dice5 = 0
 dice6 = 0
-for i in range(1, 100000):
+for i in range(1, 100):
     ccount = i
     while i == ccount:
         i += 1
         gdice = randint(1, 6)
         print(gdice)
-        if i == 100000:
+        if i == 100:
             fdice = (dice6 + dice5 + dice4 + dice3 + dice2 + dice1) / 6
             print(
-                "The average number is: {} there were 1: {}, 2: {}, 3:{}, 4:{}, 5:{}, 6:{}".format(fdice, dice1, dice2,
-                                                                                                   dice3, dice4, dice5,
-                                                                                                   dice6))
             break
         elif gdice == 2:
             dice2 += 1
