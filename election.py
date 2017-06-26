@@ -16,18 +16,37 @@ for i in range(1, 10000):
     ccount = i
     while i == ccount:
         i += 1
-        eevent = random.random()
-        print(eevent)
+        election1 = random.random()
+
+        print(election)
         if i == 10000:
             fregion = print("The winner is".format())
             break
-        elif eevent == 2:
+        elif election1 == 2:
             region1 += 1
             continue
-        elif eevent == 3:
+        elif election == 3:
             region2 += 1
             continue
-        elif eevent == 4:
+        elif election == 4:
+            region3 += 1
+            continue
+        elif election == 2:
+            region1 += 1
+            continue
+        elif election == 3:
+            region2 += 1
+            continue
+        elif election == 4:
+            region3 += 1
+            continue
+        elif election == 2:
+            region1 += 1
+            continue
+        elif election == 3:
+            region2 += 1
+            continue
+        elif election == 4:
             region3 += 1
             continue
         else:
